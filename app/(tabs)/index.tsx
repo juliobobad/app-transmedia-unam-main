@@ -1,80 +1,43 @@
-import { StyleSheet, Image, SafeAreaView,Text } from "react-native";
-import { View } from "../../components/Themed";
+import { StyleSheet, Text } from "react-native";
 import React from "react";
-import { FontAwesome } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
-import { StatusBar } from "expo-status-bar";
 import ImageSlider from "../../components/ImagesSlider";
+import { imagesTabOne } from "../../constants/Images";
+import { Image, ScrollView } from "@gluestack-ui/themed";
+import LogoApp from "../../assets/images/logo_fm_unam.png";
+import {} from "react-native-gesture-handler";
+import { View } from "../../components/Themed";
+import { BlurView } from "expo-blur";
 
 export default function TabOneScreen() {
-
-  const images = [
-    'https://fiesa.ar/images/app/teatro.jpg',
-    'https://fiesa.ar/images/app/testimonios.jpg',
-    'https://fiesa.ar/images/app/toco-madera.jpg',
-    'https://fiesa.ar/images/app/todos-los-temas.jpg',
-    'https://fiesa.ar/images/app/tradicion-sonora.jpg',
-    'https://fiesa.ar/images/app/tropicaneando.jpg',
-    'https://fiesa.ar/images/app/unam-en-concierto.jpg',
-    'https://fiesa.ar/images/app/uno-a-uno.jpg',
-    'https://fiesa.ar/images/app/vamos-a-portarnos-mal.jpg',
-    'https://fiesa.ar/images/app/ventana-a-la-opera.jpg',
-    'https://fiesa.ar/images/app/zabzukeando.jpg'
-  ]
-
-
   return (
-
-    <LinearGradient
-      style={styles.container}
-      colors={["#2d2a71", "#006fa4"]}
-    >
-    <StatusBar backgroundColor="white" />
-    <View>
-      <Image 
-        source={{uri: "https://fiesa.ar/images/app/logo_987.jpg"}}
-        style={styles.logo}
-      />
-    </View>
-    <View>
-      <Text style={styles.title}>
-        Programacion Semanal
-      </Text>
-    </View>
-    <ImageSlider 
-      images={images}>  
-    </ImageSlider>
-
-    </LinearGradient>  );
+      <LinearGradient style={styles.container} colors={["#2d2a71", "#006fa4"]}>
+        <Image alt="Logo App" style={styles.logo} source={LogoApp} />
+        <Text style={styles.title}>Programacion Semanal</Text>
+        <ImageSlider images={imagesTabOne}></ImageSlider>
+      </LinearGradient>
+  );
 }
-
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
     alignItems: "center",
-    justifyContent: "center",
-    padding: 25,
-  },
-  backgroundVideo: {
-    position: "absolute",
-    top: 0,
-    left: 0,
-    bottom: 0,
-    right: 0,
+    padding: 12,
+    flexDirection: "column",
+    justifyContent: "space-between",
   },
   title: {
     fontSize: 26,
-    color: "black",
-    fontWeight: 'bold',
-    backgroundColor: "white",
-    padding: 25,
-    alignItems: "center",
+    color: "white",
+    fontWeight: "bold",
+    textAlign: "left",
+    marginTop: 20,
+    alignSelf: "flex-start",
   },
-  logo:{
-    flex: 1,
+  logo: {
     height: 200,
     width: 200,
+    marginBottom: 120,
+    marginTop: 100,
   },
 });
-
