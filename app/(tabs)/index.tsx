@@ -65,18 +65,19 @@ const styles = StyleSheet.create({
     right: 0,
   },
   title: {
-    fontSize: 30,
+    fontSize: 26,
     color: "black",
     fontWeight: 'bold',
-    backgroundColor: "none",
-    paddingTop: 25,
-    paddingBottom: 25,
+    backgroundColor: "white",
+    padding: 25,
+    alignItems: "center",
   },
   logo:{
     flex: 1,
     height: 200,
     width: 200,
     backgroundColor: "transparent",
+    borderRadius: 100,
   },
 });
 
