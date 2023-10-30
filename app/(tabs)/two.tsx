@@ -1,6 +1,5 @@
 import React, { useEffect } from "react";
 import { StyleSheet, ImageBackground } from "react-native";
-import { View, Button } from "react-native";
 import { Text } from "../../components/Themed";
 import { FontAwesome } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
