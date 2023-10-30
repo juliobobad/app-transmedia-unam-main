@@ -38,7 +38,7 @@ export async function addTrack() {
   await TrackPlayer.add([
     {
       id: '1',
-      url: 'https://fm.unam.edu.ar/fm',
+      url: 'https://fm.unam.edu.ar/fm.m3u',
       artwork: require('../assets/images/splash.png'),
       title: '97.8 Transmedia',
       artist: 'Universidad de Misiones',

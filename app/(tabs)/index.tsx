@@ -5,7 +5,6 @@ import { FontAwesome } from "@expo/vector-icons";
 import { LinearGradient } from "expo-linear-gradient";
 import { StatusBar } from "expo-status-bar";
 import ImageSlider from "../../components/ImagesSlider";
-import logo from "../../assets/images/logo_987.png";
 
 export default function TabOneScreen() {
 
@@ -33,7 +32,7 @@ export default function TabOneScreen() {
     <StatusBar backgroundColor="white" />
     <View>
       <Image 
-        source={logo}
+        source={{uri: "https://fiesa.ar/images/app/logo_987.jpg"}}
         style={styles.logo}
       />
     </View>
@@ -76,8 +75,6 @@ const styles = StyleSheet.create({
     flex: 1,
     height: 200,
     width: 200,
-    backgroundColor: "transparent",
-    borderRadius: 100,
   },
 });
 
