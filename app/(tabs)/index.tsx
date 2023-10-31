@@ -32,12 +32,12 @@ const styles = StyleSheet.create({
     fontWeight: "bold",
     textAlign: "left",
     marginTop: 20,
-    alignSelf: "flex-start",
+    alignSelf: "center",
   },
   logo: {
-    height: 200,
-    width: 200,
-    marginBottom: 120,
-    marginTop: 100,
+    height: 285,
+    width: 300,
+    marginBottom: 60,
+    marginTop: 80,
   },
 });

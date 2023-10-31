@@ -40,7 +40,7 @@ export async function addTrack() {
       id: '1',
       url: 'https://fm.unam.edu.ar/fm.m3u',
       artwork: require('../assets/images/splash.png'),
-      title: '97.8 Transmedia',
+      title: 'Radio 97.8 FM Universidad',
       artist: 'Universidad de Misiones',
       duration: 160
     },
