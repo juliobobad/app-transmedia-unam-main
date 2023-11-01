@@ -4,7 +4,7 @@ import { LinearGradient } from "expo-linear-gradient";
 import ImageSlider from "../../components/ImagesSlider";
 import { imagesTabOne } from "../../constants/Images";
 import { Image, ScrollView } from "@gluestack-ui/themed";
-import LogoApp from "../../assets/images/logo_fm_unam.png";
+import LogoApp from "../../assets/images/logo_fm_unam_icono.png";
 import {} from "react-native-gesture-handler";
 import { View } from "../../components/Themed";
 import { BlurView } from "expo-blur";
@@ -35,7 +35,7 @@ const styles = StyleSheet.create({
     alignSelf: "center",
   },
   logo: {
-    height: 285,
+    height: 300,
     width: 300,
     marginBottom: 60,
     marginTop: 80,
